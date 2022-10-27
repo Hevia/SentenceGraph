@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "SentenceGraph"
+  site-url: "https://Hevia.github.io/SentenceGraph"
+  description: "Easily create semantic graphs from text using SentenceTransformers"
+  repo-branch: main
+  repo-url: "https://github.com/Hevia/SentenceGraph"
