@@ -5,4 +5,9 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://Hevia.github.io',
                 'git_url': 'https://github.com/Hevia/SentenceGraph',
                 'lib_path': 'SentenceGraph'},
-  'syms': {'SentenceGraph.core': {'SentenceGraph.core.foo': ('core.html#foo', 'SentenceGraph/core.py')}}}
+  'syms': { 'SentenceGraph.core': { 'SentenceGraph.core.Format': ('core.html#format', 'SentenceGraph/core.py'),
+                                    'SentenceGraph.core.SentenceGraph': ('core.html#sentencegraph', 'SentenceGraph/core.py'),
+                                    'SentenceGraph.core.SentenceGraph.__init__': ( 'core.html#sentencegraph.__init__',
+                                                                                   'SentenceGraph/core.py'),
+                                    'SentenceGraph.core.SentenceGraph.createGraph': ( 'core.html#sentencegraph.creategraph',
+                                                                                      'SentenceGraph/core.py')}}}
