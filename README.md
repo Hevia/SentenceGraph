@@ -11,10 +11,9 @@ pip install SentenceGraph
 
 ## How to use
 
-Fill me in please! Don’t forget code examples:
-
 ``` python
-from SentenceGraph.core import SentenceGraph, Format
+from SentenceGraph.core import SentenceGraph, Format, TextNode
+from SentenceGraph.functional import create_text_nodes
 ```
 
 ``` python
@@ -22,9 +21,20 @@ sentenceGraph = SentenceGraph()
 ```
 
 ``` python
+# SentenceGraph requires all sentences to be passed as TextNode, which is just a namedtuple containing an id and text.
+# There are several ways to prepare your sentence data for SentenceGraph.
+
+# Use the builtin helper function which will just assign sequential ids for the data. Useful for experimentation.
 sentences = ['This framework generates embeddings for each input sentence',
     'Sentences are passed as a list of string.', 
     'The quick brown fox jumps over the lazy dog.']
+
+sentences = create_text_nodes(sentences)
+
+# 
+sentences = [TextNode(1, 'This framework generates embeddings for each input sentence'),
+    TextNode(2, 'Sentences are passed as a list of string.'), 
+    TextNode(3,'The quick brown fox jumps over the lazy dog.')]
 ```
 
 ``` python
