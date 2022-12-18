@@ -5,10 +5,10 @@ __all__ = ['create_text_nodes']
 
 # %% ../nbs/01_functional.ipynb 2
 from typing import List
-from .core import TextNode
+from .core import TextNodeType
 
 # %% ../nbs/01_functional.ipynb 3
-def create_text_nodes(texts: List[str]) -> List[TextNode]:
+def create_text_nodes(texts: List[str]) -> List[TextNodeType]:
     """ Creates a list of TextNodes from a list of strings. """
-    return [TextNode(count, text) for count, text in enumerate(texts)]
+    return [TextNodeType(count, text) for count, text in enumerate(texts)]
 

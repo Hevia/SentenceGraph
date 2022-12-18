@@ -12,7 +12,7 @@ pip install SentenceGraph
 ## How to use
 
 ``` python
-# from SentenceGraph.core import SentenceGraph, Format, TextNode
+# from SentenceGraph.core import SentenceGraph, Format, TextNodeType
 # from SentenceGraph.functional import create_text_nodes
 ```
 
