@@ -10,4 +10,7 @@ d = { 'settings': { 'branch': 'main',
                                     'SentenceGraph.core.SentenceGraph.__init__': ( 'core.html#sentencegraph.__init__',
                                                                                    'SentenceGraph/core.py'),
                                     'SentenceGraph.core.SentenceGraph.createGraph': ( 'core.html#sentencegraph.creategraph',
-                                                                                      'SentenceGraph/core.py')}}}
+                                                                                      'SentenceGraph/core.py'),
+                                    'SentenceGraph.core.TextNode': ('core.html#textnode', 'SentenceGraph/core.py')},
+            'SentenceGraph.functional': { 'SentenceGraph.functional.create_text_nodes': ( 'functional.html#create_text_nodes',
+                                                                                          'SentenceGraph/functional.py')}}}
