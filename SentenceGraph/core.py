@@ -62,3 +62,4 @@ class SentenceGraph:
           return df
         else:
           return similarity_graph
+

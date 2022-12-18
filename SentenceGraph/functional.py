@@ -11,3 +11,4 @@ from .core import TextNode
 def create_text_nodes(texts: List[str]) -> List[TextNode]:
     """ Creates a list of TextNodes from a list of strings. """
     return [TextNode(count, text) for count, text in enumerate(texts)]
+

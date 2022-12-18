@@ -12,12 +12,12 @@ pip install SentenceGraph
 ## How to use
 
 ``` python
-from SentenceGraph.core import SentenceGraph, Format, TextNode
-from SentenceGraph.functional import create_text_nodes
+# from SentenceGraph.core import SentenceGraph, Format, TextNode
+# from SentenceGraph.functional import create_text_nodes
 ```
 
 ``` python
-sentenceGraph = SentenceGraph()
+# sentenceGraph = SentenceGraph()
 ```
 
 ``` python
@@ -25,26 +25,26 @@ sentenceGraph = SentenceGraph()
 # There are several ways to prepare your sentence data for SentenceGraph.
 
 # Use the builtin helper function which will just assign sequential ids for the data. Useful for experimentation.
-sentences = ['This framework generates embeddings for each input sentence',
-    'Sentences are passed as a list of string.', 
-    'The quick brown fox jumps over the lazy dog.']
+# sentences = ['This framework generates embeddings for each input sentence',
+#     'Sentences are passed as a list of string.', 
+#     'The quick brown fox jumps over the lazy dog.']
 
-sentences = create_text_nodes(sentences)
+# sentences = create_text_nodes(sentences)
 
-# 
-sentences = [TextNode(1, 'This framework generates embeddings for each input sentence'),
-    TextNode(2, 'Sentences are passed as a list of string.'), 
-    TextNode(3,'The quick brown fox jumps over the lazy dog.')]
+# # 
+# sentences = [TextNode(1, 'This framework generates embeddings for each input sentence'),
+#     TextNode(2, 'Sentences are passed as a list of string.'), 
+#     TextNode(3,'The quick brown fox jumps over the lazy dog.')]
 ```
 
 ``` python
-sim_graph = sentenceGraph.createGraph(sentences)
-sim_graph
+# sim_graph = sentenceGraph.createGraph(sentences)
+# sim_graph
 ```
 
 You can also return a graph matrix in different formats.
 
 ``` python
-sim_graph = sentenceGraph.createGraph(sentences, format=Format.Numpy)
-sim_graph
+# sim_graph = sentenceGraph.createGraph(sentences, format=Format.Numpy)
+# sim_graph
 ```
