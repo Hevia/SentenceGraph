@@ -9,5 +9,5 @@ from .core import TextNode
 
 # %% ../nbs/01_functional.ipynb 3
 def create_text_nodes(texts: List[str]) -> List[TextNode]:
-    """ Creates a list of TextNodes from a list of strings """
+    """ Creates a list of TextNodes from a list of strings. """
     return [TextNode(count, text) for count, text in enumerate(texts)]
