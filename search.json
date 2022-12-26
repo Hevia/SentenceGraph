@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SentenceGraph",
+    "section": "",
+    "text": "pip install SentenceGraph"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "SentenceGraph",
+    "section": "How to use",
+    "text": "How to use\n\n# from SentenceGraph.core import SentenceGraph, Format, TextNodeType\n# from SentenceGraph.functional import create_text_nodes\n\n\n# sentenceGraph = SentenceGraph()\n\n\n# SentenceGraph requires all sentences to be passed as TextNode, which is just a namedtuple containing an id and text.\n# There are several ways to prepare your sentence data for SentenceGraph.\n\n# Use the builtin helper function which will just assign sequential ids for the data. Useful for experimentation.\n# sentences = ['This framework generates embeddings for each input sentence',\n#     'Sentences are passed as a list of string.', \n#     'The quick brown fox jumps over the lazy dog.']\n\n# sentences = create_text_nodes(sentences)\n\n# # \n# sentences = [TextNode(1, 'This framework generates embeddings for each input sentence'),\n#     TextNode(2, 'Sentences are passed as a list of string.'), \n#     TextNode(3,'The quick brown fox jumps over the lazy dog.')]\n\n\n# sim_graph = sentenceGraph.createGraph(sentences)\n# sim_graph\n\nYou can also return a graph matrix in different formats.\n\n# sim_graph = sentenceGraph.createGraph(sentences, format=Format.Numpy)\n# sim_graph"
+  },
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "core",
+    "section": "",
+    "text": "source\n\nFormat\n\n Format (value, names=None, module=None, qualname=None, type=None,\n         start=1)\n\nAn enumeration.\n\nsource\n\n\nSentenceGraph\n\n SentenceGraph (model_name:str=None, model:None=None)\n\nInitialize self. See help(type(self)) for accurate signature."
+  },
+  {
+    "objectID": "functional.html",
+    "href": "functional.html",
+    "title": "Functional",
+    "section": "",
+    "text": "source\n\ncreate_text_nodes\n\n create_text_nodes (texts:List[str])\n\nCreates a list of TextNodes from a list of strings."
+  }
+]
